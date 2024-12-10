@@ -9,9 +9,26 @@ These metrics are useful for performance tracking and anomaly detection.
 """
 
 import numpy as np
+from autoencoder import evaluate_anomaly
 from sklearn.metrics.pairwise import cosine_similarity
 from scipy.spatial.distance import euclidean
 
+def evaluate_user_profile(test_data, owner_data):
+    """
+    Evaluate a user's typing profile by combining multiple metrics.
+
+    :param test_data: Typing data from the current session.
+    :param owner_data: Owner's saved typing profile data.
+    :return: Dictionary with evaluation results.
+    """
+    reconstruction_results = evaluate_anomaly(test_data)
+    cosine_sim = calculate_cosine_similarity(test_data.mean(axis=0), owner_data.mean(axis=0))
+
+    return {
+        "reconstruction_error": reconstruction_results["errors"],
+        "anomaly": reconstruction_results["anomaly"],
+        "cosine_similarity": cosine_sim
+    }
 
 def calculate_wpm(word_count, elapsed_time):
     """

@@ -1,9 +1,44 @@
 {
     "tests": [
         {
+            "timestamp": "2024-12-11T12:00:00",
             "wpm": 65,
-            "accuracy": 90,
-            "timestamp": "2024-12-11T10:00:00"
+            "accuracy": 92,
+            "error_rate": 8,
+            "avg_latency": 0.25,
+            "backspace_rate": 5,
+            "consistency": 0.12,
+            "fatigue": 10
+        },
+        {
+            "timestamp": "2024-12-11T12:30:00",
+            "wpm": 70,
+            "accuracy": 95,
+            "error_rate": 5,
+            "avg_latency": 0.22,
+            "backspace_rate": 3,
+            "consistency": 0.11,
+            "fatigue": 8
+        },
+        {
+            "timestamp": "2024-12-11T01:04:03.864839",
+            "wpm": 82.28658423273038,
+            "accuracy": 100.0,
+            "error_rate": 0.0,
+            "avg_latency": 0,
+            "backspace_rate": 0.0,
+            "consistency": 0,
+            "fatigue": 0
+        },
+        {
+            "timestamp": "2024-12-11T01:04:08.529513",
+            "wpm": 48.10225799347189,
+            "accuracy": 100.0,
+            "error_rate": 0.0,
+            "avg_latency": 0,
+            "backspace_rate": 0.0,
+            "consistency": 0,
+            "fatigue": 0
         }
     ]
 }

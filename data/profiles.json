@@ -2,8 +2,14 @@
     "owner": {
         "name": "Default Owner",
         "typing_profile": {
-            "avg_wpm": 75,
-            "accuracy": 98
+            "timestamp": "2024-12-11T12:00:00",
+            "wpm": 65,
+            "accuracy": 92,
+            "error_rate": 8,
+            "avg_latency": 0.25,
+            "backspace_rate": 5,
+            "consistency": 0.12,
+            "fatigue": 10
         }
     }
 }

@@ -1,5 +1,6 @@
-tensorflow
-numpy
-json
 tkinter
+matplotlib
+tensorflow
+json
 time
+numpy

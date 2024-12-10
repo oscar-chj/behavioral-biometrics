@@ -1,0 +1,5 @@
+tensorflow
+numpy
+json
+tkinter
+time
